@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="shortcut icon" href="./android-chrome-192x192.png" type="image/x-icon">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+        background-color: rgb(6, 95, 197);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header_left a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .header_right ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .header_right ul li {
+        margin-left: 20px;
+    }
+
+    .header_right ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .header_right ul li.active {
+        background-color: rgb(10, 9, 8);
+        border-radius: 8px;
+    }
+
+    .header_right ul li:hover {
+        background-color: rgb(10, 9, 8);
+        border-radius: 8px;
+    }
+
+    /* Website Background Image */
+    .back_image_section {
+        height: 90vh;
+    }
+
+    .back_image {
+        height: 100%;
+        width: 100%;
+        background: url("./back_image.jpg") center/cover fixed;
+    }
+
+    /* Table */
+    .table_section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        background: linear-gradient(108deg, rgba(24, 24, 24, 0.8876) 10%, rgba(48, 48, 48, 0.7336) 90%),
+            url("table_back.jpg") center/cover fixed;
+        overflow-x: auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: rgb(6, 95, 197);
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Form */
+    .form_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        margin: 5px 0;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input[type="submit"] {
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        width: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .header_left {
+            display: none;
+        }
+
+        .header_right ul {
+            margin-right: 10px;
+        }
+
+        .table_section {
+            height: 80vh;
+        }
+
+        table {
+            width: 100%;
+            margin: 10px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header_left">
+            <a href="#">RT</a>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Image -->
+    <img src="image1.jpg" alt="" width="1500" height="800">
+
+    <!-- Table -->
+    <section class="table_section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Skills</th>
+                    <th>Skills</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rock</td>
+                    <td>17</td>
+                    <td>Well-organized</td>
+                    <td>4 yrs</td>
+                    <td>4.6/5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jack</td>
+                    <td>23</td>
+                    <td>Honest</td>
+                    <td>2 yrs</td>
+                    <td>4.8/5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mil</td>
+                    <td>3</td>
+                    <td>Expert</td>
+                    <td>5 yrs</td>
+                    <td>5/5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Aida</td>
+                    <td>18</td>
+                    <td>Soft-spoken</td>
+                    <td>4 yrs</td>
+                    <td>4.7/5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Tania</td>
+                    <td>15</td>
+                    <td>Trustworthy</td>
+                    <td>4 yrs</td>
+                    <td>4.5/5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>MC Stain</td>
+                    <td>8</td>
+                    <td>Nice Nature</td>
+                    <td>2 yrs</td>
+                    <td>5/5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Bugit</td>
+                    <td>9</td>
+                    <td>Intelligent</td>
+                    <td>2 yrs</td>
+                    <td>5/5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- Form -->
+    <section class="form_section">
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="number" placeholder="Enter Your Number">
+            <input type="email" placeholder="Enter Your E-mail">
+            <textarea cols="30" rows="5" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>
+
